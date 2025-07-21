@@ -6,11 +6,11 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "IndexEdge.com - Rank with Confidence | Dubai SEO Agency",
+  title: "IndexEdge.com - Best Link Building Services for SaaS Companies | Dubai",
   description:
-    "Dubai's premier SEO agency helping businesses rank with confidence. Expert SEO services, local optimization, and digital marketing strategies for UAE businesses.",
+    "Transform your SaaS business with strategic link building. We help SaaS companies boost rankings, increase traffic, and drive growth through high-quality backlinks. Based in Dubai, UAE.",
   keywords:
-    "SEO Dubai, Dubai SEO agency, search engine optimization UAE, digital marketing Dubai, local SEO, IndexEdge",
+    "link building, SaaS link building, backlinks, SEO Dubai, digital marketing, search engine optimization, SaaS marketing, IndexEdge",
   authors: [{ name: "IndexEdge.com" }],
   creator: "IndexEdge.com",
   publisher: "IndexEdge.com",
@@ -20,25 +20,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://indexedge.com",
     siteName: "IndexEdge.com",
-    title: "IndexEdge.com - Rank with Confidence | Dubai SEO Agency",
+    title: "IndexEdge.com - Best Link Building Services for SaaS Companies",
     description:
-      "Dubai's premier SEO agency helping businesses rank with confidence. Expert SEO services and digital marketing strategies.",
+      "Transform your SaaS business with strategic link building. Boost rankings, increase traffic, and drive growth through high-quality backlinks.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "IndexEdge.com - Dubai SEO Agency",
+        alt: "IndexEdge.com - SaaS Link Building Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "IndexEdge.com - Rank with Confidence",
-    description: "Dubai's premier SEO agency helping businesses achieve online success.",
+    title: "IndexEdge.com - Best Link Building Services for SaaS Companies",
+    description: "Transform your SaaS business with strategic link building and high-quality backlinks.",
     images: ["/og-image.jpg"],
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
