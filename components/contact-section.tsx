@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 
-const whatsappNumber = "+923256677769"
+const whatsappNumber = "+971556618406"
 const whatsappMessage = "Hi! I'm interested in your link building services. Can we discuss my project?"
 
 const openWhatsApp = () => {
@@ -127,7 +127,7 @@ export function ContactSection() {
                     <h3 className="font-semibold text-white mb-2">Phone Number</h3>
                     <p className="text-slate-300">
                       <a href="tel:+923256677769" className="hover:text-emerald-400 transition-colors">
-                        +92 325 6677769
+                        +971556618406
                       </a>
                     </p>
                   </div>
@@ -162,9 +162,9 @@ export function ContactSection() {
                   <div>
                     <h3 className="font-semibold text-white mb-2">Office Location</h3>
                     <p className="text-slate-300">
-                      Downtown Dubai, UAE
+                      Al Rumaila Near umar bin khatab road , Ajmaan, 
                       <br />
-                      Business Bay District
+                      United Arab Emirates
                     </p>
                   </div>
                 </div>

@@ -19,7 +19,7 @@ const blogPosts = {
     author: "Sarah Johnson",
     date: "January 15, 2025",
     readTime: "8 min read",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/Content-Scheduling-Tools.jpg?height=400&width=800",
     content: {
       introduction:
         "In 1960, Volkswagen did something unprecedented in the advertising world. They called their own car a 'lemon.' This bold move not only saved the Beetle from obscurity in America but also revolutionized how brands communicate with consumers. For SEO companies and digital marketers today, the VW Lemon campaign offers timeless lessons about authenticity, positioning, and the power of contrarian thinking.",
@@ -28,25 +28,25 @@ const blogPosts = {
           heading: "The Context: David vs. Goliath",
           content:
             "In the late 1950s, American car culture was all about bigger, flashier, and more powerful vehicles. Detroit's Big Three automakers dominated with their chrome-laden, gas-guzzling behemoths. Into this landscape came the Volkswagen Beetle – small, simple, and decidedly un-American in its design philosophy.",
-          image: "/placeholder.svg?height=300&width=600&text=1950s+American+Cars+vs+VW+Beetle",
+          image: "/d22.jpeg?height=300&width=600&text=1950s+American+Cars+vs+VW+Beetle",
         },
         {
           heading: "The Revolutionary Campaign",
           content:
             "The advertising agency Doyle Dane Bernbach (DDB) took an approach that was radical for its time. Instead of trying to compete with American cars on their terms, they embraced the Beetle's differences. The famous 'Lemon' ad showed a Beetle with the headline 'Lemon' and copy that explained how VW's quality control was so rigorous that this particular car didn't make it off the production line.",
-          image: "/placeholder.svg?height=300&width=600&text=Original+VW+Lemon+Advertisement",
+          image: "/d23.jpeg?height=300&width=600&text=Original+VW+Lemon+Advertisement",
         },
         {
           heading: "Why It Worked: The Psychology of Honesty",
           content:
             "The campaign worked because it did something competitors couldn't: it acknowledged reality. By calling attention to potential flaws and positioning them as strengths (rigorous quality control), VW built trust with consumers. This honesty was refreshing in an era of hyperbolic advertising claims.",
-          image: "/placeholder.svg?height=300&width=600&text=Consumer+Trust+Psychology+Diagram",
+          image: "/d1.jpg?height=300&width=600&text=Consumer+Trust+Psychology+Diagram",
         },
         {
           heading: "Lessons for Modern SEO Companies",
           content:
             "Today's SEO companies can learn valuable lessons from VW's approach. Instead of making grandiose promises about overnight success, successful agencies acknowledge the challenges of SEO while positioning their expertise as the solution. Transparency about timelines, realistic expectations, and honest communication about what SEO can and cannot do builds long-term client relationships.",
-          image: "/placeholder.svg?height=300&width=600&text=Modern+SEO+Marketing+Strategies",
+          image: "/dd.jpeg?height=300&width=600&text=Modern+SEO+Marketing+Strategies",
         },
       ],
       conclusion:
@@ -60,7 +60,7 @@ const blogPosts = {
     author: "Michael Chen",
     date: "January 12, 2025",
     readTime: "12 min read",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/Best-SaaS-Affiliate-Programs.jpg?height=400&width=800",
     content: {
       introduction:
         "Affiliate marketing in the SEO space has evolved dramatically in 2025. With new tools, platforms, and opportunities emerging, SEO professionals have more ways than ever to monetize their expertise and audience. This comprehensive guide explores the top 12 SEO affiliate programs that offer the best commissions, conversion rates, and long-term earning potential.",
@@ -69,25 +69,25 @@ const blogPosts = {
           heading: "The SEO Affiliate Landscape in 2025",
           content:
             "The SEO affiliate market has matured significantly, with programs now offering more sophisticated tracking, better commission structures, and enhanced support for affiliates. The key to success lies in choosing programs that align with your audience's needs and your content strategy.",
-          image: "/placeholder.svg?height=300&width=600&text=SEO+Affiliate+Market+Growth+2025",
+          image: "/a1.jpeg?height=300&width=600&text=SEO+Affiliate+Market+Growth+2025",
         },
         {
           heading: "Top Tier Programs: The Big Players",
           content:
             "Leading SEO tools like Ahrefs, SEMrush, and Moz continue to offer some of the most lucrative affiliate programs. Ahrefs offers up to $200 per sale with a 20% recurring commission, while SEMrush provides tiered commissions up to 40% for high-volume affiliates. These programs are ideal for established SEO content creators with engaged audiences.",
-          image: "/placeholder.svg?height=300&width=600&text=Top+SEO+Tools+Commission+Comparison",
+          image: "/a2.jpg?height=300&width=600&text=Top+SEO+Tools+Commission+Comparison",
         },
         {
           heading: "Emerging Opportunities: AI-Powered SEO Tools",
           content:
             "2025 has seen the rise of AI-powered SEO tools offering attractive affiliate programs. Tools like Surfer SEO, Clearscope, and MarketMuse are offering competitive commissions (30-50%) for their innovative content optimization platforms. These programs are perfect for affiliates focusing on content marketing and AI-driven SEO strategies.",
-          image: "/placeholder.svg?height=300&width=600&text=AI+SEO+Tools+Affiliate+Programs",
+          image: "/a3.jpg?height=300&width=600&text=AI+SEO+Tools+Affiliate+Programs",
         },
         {
           heading: "Maximizing Your Affiliate Success",
           content:
             "Success in SEO affiliate marketing requires more than just placing links. The most successful affiliates create comprehensive reviews, comparison content, and educational resources. They build trust with their audience by providing honest assessments and demonstrating real-world usage of the tools they promote.",
-          image: "/placeholder.svg?height=300&width=600&text=Affiliate+Marketing+Success+Strategies",
+          image: "/d1.jpg?height=300&width=600&text=Affiliate+Marketing+Success+Strategies",
         },
       ],
       conclusion:
@@ -102,7 +102,7 @@ const blogPosts = {
     author: "Emily Rodriguez",
     date: "January 10, 2025",
     readTime: "6 min read",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/Is-Dropshipping-Illegal.jpg?height=400&width=800",
     content: {
       introduction:
         "Dropshipping has become one of the most popular e-commerce business models, but many entrepreneurs wonder about its legal status. The short answer is: dropshipping itself is completely legal. However, the way you conduct your dropshipping business can raise legal issues. This guide explores the legal landscape of dropshipping and how it impacts your SEO and marketing strategies.",
@@ -111,25 +111,25 @@ const blogPosts = {
           heading: "The Legal Foundation of Dropshipping",
           content:
             "Dropshipping is simply a fulfillment method where you don't keep products in stock. Instead, when you sell a product, you purchase it from a third party who ships it directly to the customer. This business model is legal in virtually every country, but it must be conducted ethically and transparently.",
-          image: "/placeholder.svg?height=300&width=600&text=Dropshipping+Business+Model+Diagram",
+          image: "/b1.jpg?height=300&width=600&text=Dropshipping+Business+Model+Diagram",
         },
         {
           heading: "Common Legal Pitfalls to Avoid",
           content:
             "While dropshipping is legal, certain practices can get you into trouble. These include misrepresenting products, failing to disclose shipping times, trademark infringement, and not complying with consumer protection laws. Many dropshippers also face issues with tax compliance and business registration requirements.",
-          image: "/placeholder.svg?height=300&width=600&text=Legal+Compliance+Checklist",
+          image: "/b2.jpg?height=300&width=600&text=Legal+Compliance+Checklist",
         },
         {
           heading: "SEO Implications for Dropshipping Sites",
           content:
             "From an SEO perspective, dropshipping sites face unique challenges. Duplicate content issues arise when multiple dropshippers use the same product descriptions. Google's E-A-T guidelines also scrutinize sites that don't demonstrate expertise or authority in their niche. Successful dropshipping SEO requires original content, clear value propositions, and transparent business practices.",
-          image: "/placeholder.svg?height=300&width=600&text=Dropshipping+SEO+Challenges",
+          image: "/d1.jpg?height=300&width=600&text=Dropshipping+SEO+Challenges",
         },
         {
           heading: "Building a Legally Compliant Dropshipping Business",
           content:
             "To build a successful and legal dropshipping business, focus on transparency, quality suppliers, clear terms of service, and excellent customer service. Register your business properly, understand your tax obligations, and always be honest about shipping times and product origins. This approach not only keeps you legal but also builds the trust necessary for long-term SEO success.",
-          image: "/placeholder.svg?height=300&width=600&text=Legal+Dropshipping+Business+Setup",
+          image: "/a1.jpg?height=300&width=600&text=Legal+Dropshipping+Business+Setup",
         },
       ],
       conclusion:
@@ -153,7 +153,7 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
       <article className="pt-32 pb-20">
         <div className="container mx-auto max-w-4xl px-4">
           {/* Back Button */}
-          <Link href="/#blog">
+          <Link href="/blog">
             <Button variant="ghost" className="text-emerald-400 hover:text-emerald-300 mb-8">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Blog

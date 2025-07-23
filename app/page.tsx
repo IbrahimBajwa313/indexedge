@@ -27,7 +27,7 @@ import { CaseStudyCarousel } from "@/components/case-study-carousel"
 import { ContactSection } from "@/components/contact-section"
 import { BlogSection } from "@/components/blog-section"
 
-const whatsappNumber = "+923256677769"
+const whatsappNumber = "+971556618406"
 const whatsappMessage = "Hi! I'm interested in your link building services. Can we discuss my project?"
 
 const openWhatsApp = () => {
@@ -38,7 +38,7 @@ const openWhatsApp = () => {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
@@ -51,10 +51,10 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
-            <span className="text-white">WE DON'T TALK.</span>
+            <span className="text-white">Rank with </span>
             <br />
             <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-              WE RANK.
+              The Confidence
             </span>
           </h1>
 
@@ -89,7 +89,7 @@ export default function HomePage() {
       </section>
 
       {/* Case Studies Results Section */}
-      <AnimatedSection className="py-20 px-4 relative">
+      {/* <AnimatedSection className="py-20 px-4 relative">
         <div className="container mx-auto max-w-7xl">
           <Image
             src="/images/case-study-results.png"
@@ -99,7 +99,7 @@ export default function HomePage() {
             className="w-full rounded-2xl shadow-2xl"
           />
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Trust Section */}
       <AnimatedSection className="py-20 px-4 bg-slate-800/50">
@@ -316,7 +316,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Case Studies Carousel */}
-      <AnimatedSection className="py-20 px-4">
+      {/* <AnimatedSection className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20 mb-4">Success Stories</Badge>
@@ -330,7 +330,7 @@ export default function HomePage() {
           </div>
           <CaseStudyCarousel />
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Pricing Section */}
       <AnimatedSection className="py-20 px-4 bg-slate-800/30">

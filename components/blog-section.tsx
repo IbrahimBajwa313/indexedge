@@ -15,7 +15,7 @@ const blogPosts = [
     title: "VW Lemon Ad History",
     excerpt:
       "How Volkswagen's famous 'Lemon' ad campaign revolutionized advertising and what SEO companies can learn from it.",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/Content-Scheduling-Tools.jpg?height=200&width=400",
     category: "Marketing History",
     readTime: "8 min read",
   },
@@ -24,7 +24,7 @@ const blogPosts = [
     slug: "best-seo-affiliate-programs-2025",
     title: "12 Best SEO Affiliate Programs 2025",
     excerpt: "Discover the most lucrative SEO affiliate programs that can boost your revenue and expand your reach.",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/Best-SaaS-Affiliate-Programs.jpg?height=200&width=400",
     category: "Affiliate Marketing",
     readTime: "12 min read",
   },
@@ -34,7 +34,7 @@ const blogPosts = [
     title: "Is Dropshipping Illegal?",
     excerpt:
       "Understanding the legal landscape of dropshipping and how it affects your business model and marketing strategies.",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/Is-Dropshipping-Illegal.jpg?height=200&width=400",
     category: "Legal",
     readTime: "6 min read",
   },
