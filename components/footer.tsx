@@ -115,12 +115,12 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-emerald-400" />
-                <span className="text-slate-300">Downtown Dubai, UAE</span>
+                <span className="text-slate-300">Al Rumaila Near umar bin khatab road , Ajmaan, United Arab Emirates</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-emerald-400" />
-                <a href="tel:+971551234567" className="text-slate-300 hover:text-emerald-400 transition-colors">
-                  +971-55-123-4567
+                <a href="tel:+971556618406" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                  +971556618406
                 </a>
               </div>
               <div className="flex items-center space-x-3">
