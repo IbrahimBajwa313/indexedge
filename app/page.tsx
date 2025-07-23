@@ -46,9 +46,12 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)]"></div>
 
         <AnimatedSection className="container mx-auto max-w-6xl relative z-10 text-center">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-8">
-            <span className="text-emerald-400 text-sm font-medium">Let's craft a strategy that works for you.</span>
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 mb-8 mt-16 sm:mt-8">
+            <span className="text-emerald-400 text-sm font-medium">
+              Let's craft a strategy that works for you.
+            </span>
           </div>
+
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
             <span className="text-white">Rank with </span>

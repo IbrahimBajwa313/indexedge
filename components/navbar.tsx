@@ -67,8 +67,8 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-slate-800">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden bg-slate-800 py-4 border-t border-slate-800">
+            <div className="flex flex-col space-y-4 px-4">
               <Link
                 href="/"
                 className="text-slate-300 hover:text-emerald-400 transition-colors font-medium"
