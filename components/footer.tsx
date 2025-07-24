@@ -1,12 +1,19 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import Link from "next/link"
+import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook } from "lucide-react"
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Linkedin,
+  Twitter,
+  Facebook,
+} from "lucide-react"
 
 export function Footer() {
   const [email, setEmail] = useState("")
@@ -14,8 +21,9 @@ export function Footer() {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log("Newsletter signup:", email)
+    toast.success("Thank you for subscribing to our newsletter!")
     setEmail("")
-    alert("Thank you for subscribing to our newsletter!")
+    
   }
 
   return (
@@ -115,7 +123,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-emerald-400" />
-                <span className="text-slate-300">Al Rumaila Near umar bin khatab road , Ajmaan, United Arab Emirates</span>
+                <span className="text-slate-300">Al Rumaila Near umar bin khatab road, Ajmaan, United Arab Emirates</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-emerald-400" />

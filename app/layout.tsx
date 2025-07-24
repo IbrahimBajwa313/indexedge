@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { Header } from "@/components/header" // Make sure this path is correct
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
 
@@ -52,6 +52,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar /> {/* ✅ Add this */}
         {children}
+        <Toaster />
       </body>
     </html>
   )
