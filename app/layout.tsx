@@ -1,14 +1,15 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import { Toaster } from "@/components/ui/sonner"
-import "./globals.css"
-import { Navbar } from "@/components/navbar"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
+import "./globals.css";
+import { Navbar } from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IndexEdge.com - Best Link Building Services for SaaS Companies | Dubai",
+  title:
+    "IndexEdge.com - Best Link Building Services for SaaS Companies | Dubai",
   description:
     "Transform your SaaS business with strategic link building. We help SaaS companies boost rankings, increase traffic, and drive growth through high-quality backlinks. Based in Dubai, UAE.",
   keywords:
@@ -17,6 +18,9 @@ export const metadata: Metadata = {
   creator: "IndexEdge.com",
   publisher: "IndexEdge.com",
   robots: "index, follow",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -37,15 +41,16 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "IndexEdge.com - Best Link Building Services for SaaS Companies",
-    description: "Transform your SaaS business with strategic link building and high-quality backlinks.",
+    description:
+      "Transform your SaaS business with strategic link building and high-quality backlinks.",
     images: ["/og-image.jpg"],
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -55,5 +60,5 @@ export default function RootLayout({
         <Toaster />
       </body>
     </html>
-  )
+  );
 }

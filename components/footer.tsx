@@ -3,6 +3,7 @@
 import type React from "react";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -61,9 +62,13 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-emerald-500 text-white px-3 py-1 rounded-lg font-bold text-lg">
-                IE
-              </div>
+              <Image
+                src="/logo.png"
+                alt="LOGO"
+                width={35}
+                height={35}
+                // style={{ border: "1px solid white" }}
+              />
               <span className="font-bold text-xl text-white">
                 IndexEdge.com
               </span>
