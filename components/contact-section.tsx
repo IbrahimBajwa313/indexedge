@@ -1,45 +1,52 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
-import { AnimatedSection } from "@/components/animated-section"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { AnimatedSection } from "@/components/animated-section";
+import { FaWhatsapp } from "react-icons/fa";
 
-const whatsappNumber = "+971556618406"
-const whatsappMessage = "Hi! I'm interested in your link building services. Can we discuss my project?"
+const whatsappNumber = "+971556618406";
+const whatsappMessage =
+  "Hi! I'm interested in your link building services. Can we discuss my project?";
 
 const openWhatsApp = () => {
-  const url = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(whatsappMessage)}`
-  window.open(url, "_blank")
-}
+  const url = `https://wa.me/${whatsappNumber.replace(
+    /[^0-9]/g,
+    ""
+  )}?text=${encodeURIComponent(whatsappMessage)}`;
+  window.open(url, "_blank");
+};
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-  })
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted:", formData)
+    console.log("Form submitted:", formData);
     // Reset form
-    setFormData({ name: "", email: "", message: "" })
-    alert("Thank you for your message! We'll get back to you soon.")
-  }
+    setFormData({ name: "", email: "", message: "" });
+    alert("Thank you for your message! We'll get back to you soon.");
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   return (
     <AnimatedSection className="py-20 px-4 bg-slate-800">
@@ -49,7 +56,8 @@ export function ContactSection() {
             Get In <span className="text-emerald-400">Touch</span>
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Ready to start your link building journey? Contact us today for a free consultation.
+            Ready to start your link building journey? Contact us today for a
+            free consultation.
           </p>
         </div>
 
@@ -57,12 +65,17 @@ export function ContactSection() {
           {/* Contact Form */}
           <Card className="bg-slate-700/50 border-slate-600">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-white">Send Us a Message</CardTitle>
+              <CardTitle className="text-2xl font-bold text-white">
+                Send Us a Message
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-slate-300 mb-2"
+                  >
                     Full Name
                   </label>
                   <Input
@@ -77,7 +90,10 @@ export function ContactSection() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-slate-300 mb-2"
+                  >
                     Email Address
                   </label>
                   <Input
@@ -92,7 +108,10 @@ export function ContactSection() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-slate-300 mb-2"
+                  >
                     Message
                   </label>
                   <Textarea
@@ -117,41 +136,28 @@ export function ContactSection() {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="bg-slate-700/50 border-slate-600">
+            {/* <Card className="bg-slate-700/50 border-slate-600">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-4">
                   <div className="bg-emerald-500/10 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-emerald-400" />
+                    <FaWhatsapp className="h-6 w-6 text-emerald-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white mb-2">Phone Number</h3>
+                    <h3 className="font-semibold text-white mb-2">
+                      Phone Number
+                    </h3>
                     <p className="text-slate-300">
-                      <a href="tel:+923256677769" className="hover:text-emerald-400 transition-colors">
+                      <a
+                        href="tel:+923256677769"
+                        className="hover:text-emerald-400 transition-colors"
+                      >
                         +971556618406
                       </a>
                     </p>
                   </div>
                 </div>
               </CardContent>
-            </Card>
-
-            <Card className="bg-slate-700/50 border-slate-600">
-              <CardContent className="p-8">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-emerald-500/10 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-emerald-400" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white mb-2">Email Address</h3>
-                    <p className="text-slate-300">
-                      <a href="mailto:ceo@indexedge.com" className="hover:text-emerald-400 transition-colors">
-                        ceo@indexedge.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            </Card> */}
 
             <Card className="bg-slate-700/50 border-slate-600">
               <CardContent className="p-8">
@@ -160,9 +166,11 @@ export function ContactSection() {
                     <MapPin className="h-6 w-6 text-emerald-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white mb-2">Office Location</h3>
+                    <h3 className="font-semibold text-white mb-2">
+                      Office Location
+                    </h3>
                     <p className="text-slate-300">
-                      Al Rumaila Near umar bin khatab road , Ajmaan, 
+                      Al Rumaila Near Umar bin Khatab Road, Ajman,
                       <br />
                       United Arab Emirates
                     </p>
@@ -176,9 +184,16 @@ export function ContactSection() {
                 <div className="bg-emerald-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MessageCircle className="h-8 w-8 text-emerald-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">Prefer to Chat?</h3>
-                <p className="text-slate-300 mb-4">Get instant responses on WhatsApp</p>
-                <Button onClick={openWhatsApp} className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full">
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Prefer to Chat?
+                </h3>
+                <p className="text-slate-300 mb-4">
+                  Get instant responses on WhatsApp
+                </p>
+                <Button
+                  onClick={openWhatsApp}
+                  className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full"
+                >
                   <MessageCircle className="mr-2 h-4 w-4" />
                   Chat on WhatsApp
                 </Button>
@@ -188,5 +203,5 @@ export function ContactSection() {
         </div>
       </div>
     </AnimatedSection>
-  )
+  );
 }
