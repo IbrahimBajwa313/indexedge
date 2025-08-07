@@ -34,7 +34,7 @@ const blogPosts = {
         heading: "Keyword Research and Mapping for SaaS Growth",
         content:
           "A powerful SaaS SEO campaign begins with laser-targeted keyword research. Our team identifies high-conversion keywords across various stages of the buyer’s journey:\n• Top of Funnel (TOFU): Educational keywords like 'how to manage remote teams'\n• Middle of Funnel (MOFU): Comparison keywords like 'best project management tools for startups'\n• Bottom of Funnel (BOFU): Purchase-intent keywords like 'buy CRM for small business'\n\nWe create detailed keyword maps, aligning every piece of content with a strategic SEO objective—whether it's traffic generation, lead capture, or authority building.",
-        image: "/bloga2.png?height=300&width=600&text=SaaS+Keyword+Strategy"
+        image: "/bloga2.jpg?height=300&width=600&text=SaaS+Keyword+Strategy"
       },
       {
         heading: "Technical SEO Optimization for Scalable Platforms",
