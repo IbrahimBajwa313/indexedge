@@ -9,15 +9,15 @@ import Link from "next/link"
 import { AnimatedSection } from "@/components/animated-section"
 
 const blogPosts = [
-  {
+   {
     id: 1,
-    slug: "vw-lemon-ad-history",
-    title: "VW Lemon Ad History",
+    slug: "saas-seo-services",
+    title: "Top-Tier SAAS SEO Services to Skyrocket Your Software Growth",
     excerpt:
-      "How Volkswagen's famous 'Lemon' ad campaign revolutionized advertising and what SEO companies can learn from it.",
-    image: "/Content-Scheduling-Tools.jpg?height=200&width=400",
-    category: "Marketing History",
-    readTime: "8 min read",
+      "Discover specialized SEO services designed for SaaS platforms—covering keyword research, technical optimization, content strategy, link building, and more.",
+    image: "/saas.jpg?height=200&width=400",
+    category: "SaaS SEO",
+    readTime: "10 min read",
   },
   {
     id: 2,
