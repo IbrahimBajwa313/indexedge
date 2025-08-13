@@ -93,9 +93,9 @@ export default function HomePage() {
               onClick={openWhatsApp}
               variant="outline"
               size="lg"
-              className="border-border text-muted-foreground hover:bg-secondary px-8 py-4 text-lg rounded-full bg-transparent"
+              className="mb-6 border-border text-muted-foreground hover:bg-secondary px-8 py-4 text-lg rounded-full bg-transparent"
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
+              <MessageCircle className="mr-2 h-5 w-5 " />
               Chat Now
             </Button>
           </div>
