@@ -19,23 +19,25 @@ const blogPosts = [
     category: "SaaS SEO",
     readTime: "10 min read",
   },
+  
   {
     id: 2,
-    slug: "best-seo-affiliate-programs-2025",
-    title: "12 Best SEO Affiliate Programs 2025",
-    excerpt: "Discover the most lucrative SEO affiliate programs that can boost your revenue and expand your reach.",
-    image: "/Best-SaaS-Affiliate-Programs.jpg?height=200&width=400",
-    category: "Affiliate Marketing",
-    readTime: "12 min read",
+    slug: "seo-for-technology-websites",
+    title: "SEO for Technology Websites – How IndexEdge.com Helps Tech Brands Dominate Search Rankings",
+    excerpt: "Discover how IndexEdge.com empowers technology businesses to dominate search rankings through industry-focused SEO strategies.",
+    image: "/b1.jpg?height=200&width=400",
+    category: "SEO",
+    readTime: "7 min read",
   },
+  
   {
     id: 3,
-    slug: "is-dropshipping-illegal",
-    title: "Is Dropshipping Illegal?",
-    excerpt: "Understanding the legal landscape of dropshipping and how it affects your business model and marketing strategies.",
-    image: "/Is-Dropshipping-Illegal.jpg?height=200&width=400",
-    category: "Legal",
-    readTime: "6 min read",
+    slug: "profe   ssional-seo-services-business-websites",
+    title: "Professional SEO Services for Business Websites—Maximize Your Online Success",
+    excerpt: "Unlock the full potential of your business website with expert SEO services designed to boost visibility, drive targeted traffic, and increase conversions.",
+    image: "/a2.jpg?height=200&width=400",
+    category: "SEO",
+    readTime: "10 min read",
   },
 ]
 
