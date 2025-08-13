@@ -23,9 +23,11 @@ const openWhatsApp = () => {
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
 
   useEffect(() => {
+    setMounted(true); // Avoid SSR hydration mismatch
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -45,12 +47,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src={resolvedTheme === "light" ? "/image.png" : "/logo.png"}
-              alt="LOGO"
-              width={35}
-              height={35}
-            />
+            {mounted && (
+              <Image
+                src={resolvedTheme === "light" ? "/image.png" : "/logo.png"}
+                alt="LOGO"
+                width={35}
+                height={35}
+              />
+            )}
             <span className="font-bold text-xl text-foreground">
               IndexEdge.com
             </span>
