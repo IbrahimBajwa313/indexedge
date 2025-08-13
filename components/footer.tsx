@@ -6,8 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { FaWhatsapp } from "react-icons/fa";
+import { Input } from "@/components/ui/input"; 
 import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook } from "lucide-react";
 
 export function Footer() {
