@@ -13,7 +13,7 @@ function openWhatsApp() {
 
 export default function LetsWorkTogetherPage() {
   return (
-    <main className="min-h-screen bg-slate-900 text-white">
+    <main className="min-h-screen bg-background text-foreground">
       {/* CTA Banner */}
       <section className="bg-gradient-to-r from-emerald-600 to-cyan-600 py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
@@ -33,7 +33,7 @@ export default function LetsWorkTogetherPage() {
       </section>
 
       {/* Contact Form Section (Styled separately, outside of gradient) */}
-      <section className="bg-slate-950 py-20 px-4">
+      <section className="bg-background py-20 px-4">
         <div className="container mx-auto max-w-5xl">
           <ContactSection />
         </div>

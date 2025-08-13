@@ -41,7 +41,7 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-slate-900 text-white">
+    <main className="min-h-screen bg-background text-foreground">
       <AnimatedSection className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
@@ -51,7 +51,7 @@ export default function BlogPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               From Our <span className="text-emerald-400">Blog</span>
             </h1>
-            <p className="text-slate-400 max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               Explore actionable tips, case studies, and thought leadership in marketing, eCommerce, and business.
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <Card
                 key={post.id}
-                className="bg-slate-800/50 border-slate-700 hover:border-emerald-500/50 transition-all duration-300 overflow-hidden group"
+                className="bg-card border-border hover:border-emerald-500/50 transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative">
                   <Image
@@ -75,13 +75,13 @@ export default function BlogPage() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <div className="flex items-center justify-between text-sm text-slate-400 mb-3">
+                  <div className="flex items-center justify-between text-sm text-muted-foreground mb-3">
                     <span>{post.readTime}</span>
                   </div>
-                  <h2 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+                  <h2 className="text-xl font-bold text-foreground mb-3 group-hover:text-emerald-400 transition-colors">
                     {post.title}
                   </h2>
-                  <p className="text-slate-300 mb-4 leading-relaxed">{post.excerpt}</p>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">{post.excerpt}</p>
                   <Link href={`/blog/${post.slug}`}>
                     <Button variant="ghost" className="text-emerald-400 hover:text-emerald-300 p-0">
                       Read More <ArrowRight className="ml-2 h-4 w-4" />

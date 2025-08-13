@@ -183,7 +183,7 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
   }
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
       <article className="pt-32 pb-20">
@@ -199,9 +199,9 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
           {/* Article Header */}
           <header className="mb-12">
             <Badge className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20 mb-4">{post.category}</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">{post.title}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">{post.title}</h1>
 
-            <div className="flex flex-wrap items-center gap-6 text-slate-400 mb-8">
+            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-8">
               <div className="flex items-center">
                 <User className="h-4 w-4 mr-2" />
                 {post.author}
@@ -226,13 +226,13 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
           </header>
 
           {/* Article Content */}
-          <div className="prose prose-invert prose-lg max-w-none">
-            <p className="text-xl text-slate-300 leading-relaxed mb-8">{post.content.introduction}</p>
+          <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">{post.content.introduction}</p>
 
             {post.content.sections.map((section, index) => (
               <section key={index} className="mb-12">
-                <h2 className="text-3xl font-bold text-white mb-6">{section.heading}</h2>
-                <p className="text-lg text-slate-300 leading-relaxed mb-8">{section.content}</p>
+                <h2 className="text-3xl font-bold text-foreground mb-6">{section.heading}</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8">{section.content}</p>
                 <Image
                   src={section.image || "/placeholder.svg"}
                   alt={section.heading}
@@ -243,9 +243,9 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
               </section>
             ))}
 
-            <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
-              <h3 className="text-2xl font-bold text-white mb-4">Conclusion</h3>
-              <p className="text-lg text-slate-300 leading-relaxed">{post.content.conclusion}</p>
+            <div className="bg-card rounded-2xl p-8 border border-border">
+              <h3 className="text-2xl font-bold text-foreground mb-4">Conclusion</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">{post.content.conclusion}</p>
             </div>
           </div>
 

@@ -46,7 +46,7 @@ export function BlogSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <Badge className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20 mb-4">Latest Insights</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             From Our <span className="text-emerald-400">Blog</span>
           </h2>
         </div>
@@ -55,7 +55,7 @@ export function BlogSection() {
           {blogPosts.map((post) => (
             <Card
               key={post.id}
-              className="bg-slate-800/50 border-slate-700 hover:border-emerald-500/50 transition-all duration-300 overflow-hidden group"
+              className="bg-card border-border hover:border-emerald-500/50 transition-all duration-300 overflow-hidden group"
             >
               <div className="relative">
                 <Image
@@ -70,13 +70,13 @@ export function BlogSection() {
                 </div>
               </div>
               <CardContent className="p-6">
-                <div className="flex items-center justify-between text-sm text-slate-400 mb-3">
+                <div className="flex items-center justify-between text-sm text-muted-foreground mb-3">
                   <span>{post.readTime}</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-emerald-400 transition-colors">
                   {post.title}
                 </h3>
-                <p className="text-slate-300 mb-4 leading-relaxed">{post.excerpt}</p>
+                <p className="text-muted-foreground mb-4 leading-relaxed">{post.excerpt}</p>
                 <Link href={`/blog/${post.slug}`}>
                   <Button variant="ghost" className="text-emerald-400 hover:text-emerald-300 p-0">
                     Read More <ArrowRight className="ml-2 h-4 w-4" />

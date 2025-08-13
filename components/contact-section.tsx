@@ -49,13 +49,13 @@ export function ContactSection() {
   };
 
   return (
-    <AnimatedSection className="py-20 px-4 bg-slate-800">
+    <AnimatedSection className="py-20 px-4 bg-secondary">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Get In <span className="text-emerald-400">Touch</span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to start your link building journey? Contact us today for a
             free consultation.
           </p>
@@ -63,9 +63,9 @@ export function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="bg-slate-700/50 border-slate-600">
+          <Card className="bg-card border-border">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-white">
+              <CardTitle className="text-2xl font-bold text-foreground">
                 Send Us a Message
               </CardTitle>
             </CardHeader>
@@ -74,7 +74,7 @@ export function ContactSection() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-slate-300 mb-2"
+                    className="block text-sm font-medium text-muted-foreground mb-2"
                   >
                     Full Name
                   </label>
@@ -85,14 +85,14 @@ export function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full bg-slate-800 border-slate-600 text-white"
+                    className="w-full bg-secondary border-border text-foreground"
                     placeholder="Enter your full name"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-slate-300 mb-2"
+                    className="block text-sm font-medium text-muted-foreground mb-2"
                   >
                     Email Address
                   </label>
@@ -103,14 +103,14 @@ export function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full bg-slate-800 border-slate-600 text-white"
+                    className="w-full bg-secondary border-border text-foreground"
                     placeholder="Enter your email address"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-slate-300 mb-2"
+                    className="block text-sm font-medium text-muted-foreground mb-2"
                   >
                     Message
                   </label>
@@ -120,13 +120,13 @@ export function ContactSection() {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full min-h-[120px] bg-slate-800 border-slate-600 text-white"
+                    className="w-full min-h-[120px] bg-secondary border-border text-foreground"
                     placeholder="Tell us about your project and how we can help..."
                   />
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-full"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 rounded-full"
                 >
                   Send Message
                 </Button>
@@ -159,17 +159,17 @@ export function ContactSection() {
               </CardContent>
             </Card> */}
 
-            <Card className="bg-slate-700/50 border-slate-600">
+            <Card className="bg-card border-border">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-4">
                   <div className="bg-emerald-500/10 p-3 rounded-lg">
                     <MapPin className="h-6 w-6 text-emerald-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white mb-2">
+                    <h3 className="font-semibold text-foreground mb-2">
                       Office Location
                     </h3>
-                    <p className="text-slate-300">
+                    <p className="text-muted-foreground">
                       Al Rumaila Near Umar bin Khatab Road, Ajman,
                       <br />
                       United Arab Emirates
@@ -184,15 +184,15 @@ export function ContactSection() {
                 <div className="bg-emerald-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MessageCircle className="h-8 w-8 text-emerald-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-foreground mb-3">
                   Prefer to Chat?
                 </h3>
-                <p className="text-slate-300 mb-4">
+                <p className="text-muted-foreground mb-4">
                   Get instant responses on WhatsApp
                 </p>
                 <Button
                   onClick={openWhatsApp}
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full"
                 >
                   <MessageCircle className="mr-2 h-4 w-4" />
                   Chat on WhatsApp

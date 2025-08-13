@@ -20,15 +20,15 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-slate-900 border-t border-slate-800">
+    <footer className="bg-background border-t border-border">
       {/* Newsletter Section */}
-      <div className="border-b border-slate-800">
+      <div className="border-b border-border">
         <div className="container mx-auto max-w-6xl px-4 py-16">
           <div className="text-center space-y-6">
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-3xl font-bold text-foreground">
               Stay Updated with Link Building Insights
             </h3>
-            <p className="text-slate-300 max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               Get the latest link building strategies, case studies, and
               industry insights delivered to your inbox.
             </p>
@@ -42,11 +42,11 @@ export function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 bg-slate-800 border-slate-700 text-white placeholder:text-slate-400 rounded-full"
+                className="flex-1 bg-secondary border-border text-foreground placeholder:text-muted-foreground rounded-full"
               />
               <Button
                 type="submit"
-                className="bg-emerald-500 hover:bg-emerald-600 rounded-full"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full"
               >
                 Subscribe
               </Button>
@@ -68,30 +68,30 @@ export function Footer() {
                 height={35}
                 // style={{ border: "1px solid white" }}
               />
-              <span className="font-bold text-xl text-white">
+              <span className="font-bold text-xl text-foreground">
                 IndexEdge.com
               </span>
             </div>
-            <p className="text-slate-300">
+            <p className="text-muted-foreground">
               Dubai's premier link building agency helping SaaS companies
               dominate search results with strategic, high-quality backlinks.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-slate-400 hover:text-emerald-400 transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-slate-400 hover:text-emerald-400 transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-slate-400 hover:text-emerald-400 transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
@@ -100,29 +100,29 @@ export function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-white">Services</h4>
+            <h4 className="font-semibold text-lg text-foreground">Services</h4>
             <div className="space-y-2">
               <a
                 href="#"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 SaaS Link Building
               </a>
               <a
                 href="#"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 White Label Services
               </a>
               <a
                 href="#"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 End-to-End SEO
               </a>
               <a
                 href="#"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 Content Marketing
               </a>
@@ -131,29 +131,29 @@ export function Footer() {
 
           {/* Company */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-white">Company</h4>
+            <h4 className="font-semibold text-lg text-foreground">Company</h4>
             <div className="space-y-2">
               <Link
                 href="/about"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 About Us
               </Link>
               <Link
                 href="/blog"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 Blog
               </Link>
               <Link
                 href="/contact"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 Contact
               </Link>
               <a
                 href="#"
-                className="block text-slate-300 hover:text-emerald-400 transition-colors"
+                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 Case Studies
               </a>
@@ -162,11 +162,11 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-white">Contact Info</h4>
+            <h4 className="font-semibold text-lg text-foreground">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-12 w-12 text-emerald-400" />
-                <span className="text-slate-300">
+                <span className="text-muted-foreground">
                   Al Rumaila Near Umar bin Khatab Road, Ajman, United Arab
                   Emirates
                 </span>
@@ -186,28 +186,28 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-slate-800">
+      <div className="border-t border-border">
         <div className="container mx-auto max-w-6xl px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-slate-400 text-sm">
+            <p className="text-muted-foreground text-sm">
               © {new Date().getFullYear()} IndexEdge.com. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a
                 href="#"
-                className="text-slate-400 hover:text-emerald-400 transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-slate-400 hover:text-emerald-400 transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Terms of Service
               </a>
               <a
                 href="#"
-                className="text-slate-400 hover:text-emerald-400 transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Cookie Policy
               </a>

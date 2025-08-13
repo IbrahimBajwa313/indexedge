@@ -115,11 +115,11 @@ export function CaseStudyCarousel() {
         >
           {caseStudies.map((study) => (
             <div key={study.id} className="w-1/3 flex-shrink-0 px-4">
-              <Card className="bg-slate-800/50 border-slate-700 hover:border-emerald-500/50 transition-all duration-300 h-full">
+              <Card className="bg-card border-border hover:border-emerald-500/50 transition-all duration-300 h-full">
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">{study.company}</h3>
+                      <h3 className="text-xl font-bold text-foreground mb-1">{study.company}</h3>
                       <Badge variant="outline" className="text-emerald-400 border-emerald-500/20">
                         {study.industry}
                       </Badge>
@@ -129,48 +129,48 @@ export function CaseStudyCarousel() {
                     </div>
                   </div>
 
-                  <p className="text-slate-300 text-sm mb-6">{study.description}</p>
+                  <p className="text-muted-foreground text-sm mb-6">{study.description}</p>
 
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center text-slate-300">
+                      <div className="flex items-center text-muted-foreground">
                         <TrendingUp className="h-4 w-4 mr-2 text-emerald-400" />
                         <span className="text-sm">Traffic Increase</span>
                       </div>
-                      <span className="text-white font-semibold">
+                      <span className="text-foreground font-semibold">
                         {study.trafficFrom} → {study.trafficTo}
                       </span>
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center text-slate-300">
+                      <div className="flex items-center text-muted-foreground">
                         <Link className="h-4 w-4 mr-2 text-emerald-400" />
                         <span className="text-sm">Links Built</span>
                       </div>
-                      <span className="text-white font-semibold">{study.linksBuilt}</span>
+                      <span className="text-foreground font-semibold">{study.linksBuilt}</span>
                     </div>
 
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center text-slate-300">
+                      <div className="flex items-center text-muted-foreground">
                         <Clock className="h-4 w-4 mr-2 text-emerald-400" />
                         <span className="text-sm">Time Spent</span>
                       </div>
-                      <span className="text-white font-semibold text-sm">{study.timeSpent}</span>
+                      <span className="text-foreground font-semibold text-sm">{study.timeSpent}</span>
                     </div>
                   </div>
 
                   <div className="space-y-3 text-sm">
                     <div>
                       <span className="text-emerald-400 font-semibold">Challenge: </span>
-                      <span className="text-slate-300">{study.challenge}</span>
+                      <span className="text-muted-foreground">{study.challenge}</span>
                     </div>
                     <div>
                       <span className="text-emerald-400 font-semibold">Solution: </span>
-                      <span className="text-slate-300">{study.solution}</span>
+                      <span className="text-muted-foreground">{study.solution}</span>
                     </div>
                     <div>
                       <span className="text-emerald-400 font-semibold">Results: </span>
-                      <span className="text-slate-300">{study.results}</span>
+                      <span className="text-muted-foreground">{study.results}</span>
                     </div>
                   </div>
                 </CardContent>
@@ -184,21 +184,21 @@ export function CaseStudyCarousel() {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-slate-800/80 border-slate-600 hover:bg-slate-700"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-secondary/80 border-border hover:bg-secondary"
         onClick={goToPrevious}
         disabled={currentIndex === 0}
       >
-        <ChevronLeft className="h-4 w-4 text-white" />
+        <ChevronLeft className="h-4 w-4 text-foreground" />
       </Button>
 
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-slate-800/80 border-slate-600 hover:bg-slate-700"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-secondary/80 border-border hover:bg-secondary"
         onClick={goToNext}
         disabled={currentIndex === maxIndex}
       >
-        <ChevronRight className="h-4 w-4 text-white" />
+        <ChevronRight className="h-4 w-4 text-foreground" />
       </Button>
 
       {/* Dots Indicator */}
@@ -207,7 +207,7 @@ export function CaseStudyCarousel() {
           <button
             key={index}
             className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentIndex ? "bg-emerald-400" : "bg-slate-600"
+              index === currentIndex ? "bg-emerald-400" : "bg-muted"
             }`}
             onClick={() => setCurrentIndex(index)}
           />

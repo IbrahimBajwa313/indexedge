@@ -95,7 +95,7 @@ export function TestimonialSlider() {
 
   return (
     <div className="relative">
-      <Card className="bg-slate-800/50 border-slate-700 overflow-hidden">
+      <Card className="bg-card border-border overflow-hidden">
         <CardContent className="p-8 md:p-12">
           <div className="flex items-center justify-center mb-6">
             {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
@@ -103,7 +103,7 @@ export function TestimonialSlider() {
             ))}
           </div>
 
-          <blockquote className="text-xl md:text-2xl text-slate-200 text-center mb-8 leading-relaxed italic">
+          <blockquote className="text-xl md:text-2xl text-foreground text-center mb-8 leading-relaxed italic">
             "{testimonials[currentIndex].content}"
           </blockquote>
 
@@ -116,8 +116,8 @@ export function TestimonialSlider() {
               className="rounded-full"
             />
             <div className="text-center">
-              <h4 className="font-semibold text-white text-lg">{testimonials[currentIndex].name}</h4>
-              <p className="text-slate-400">{testimonials[currentIndex].title}</p>
+              <h4 className="font-semibold text-foreground text-lg">{testimonials[currentIndex].name}</h4>
+              <p className="text-muted-foreground">{testimonials[currentIndex].title}</p>
               <p className="text-emerald-400 text-sm">{testimonials[currentIndex].company}</p>
             </div>
           </div>
@@ -128,19 +128,19 @@ export function TestimonialSlider() {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-slate-800/80 border-slate-600 hover:bg-slate-700"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-secondary/80 border-border hover:bg-secondary"
         onClick={goToPrevious}
       >
-        <ChevronLeft className="h-4 w-4 text-white" />
+        <ChevronLeft className="h-4 w-4 text-foreground" />
       </Button>
 
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-slate-800/80 border-slate-600 hover:bg-slate-700"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-secondary/80 border-border hover:bg-secondary"
         onClick={goToNext}
       >
-        <ChevronRight className="h-4 w-4 text-white" />
+        <ChevronRight className="h-4 w-4 text-foreground" />
       </Button>
 
       {/* Dots Indicator */}
@@ -149,7 +149,7 @@ export function TestimonialSlider() {
           <button
             key={index}
             className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentIndex ? "bg-emerald-400" : "bg-slate-600"
+              index === currentIndex ? "bg-emerald-400" : "bg-muted"
             }`}
             onClick={() => {
               setIsAutoPlaying(false)
