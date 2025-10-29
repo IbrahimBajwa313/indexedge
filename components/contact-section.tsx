@@ -11,7 +11,7 @@ import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { FaWhatsapp } from "react-icons/fa";
 
-const whatsappNumber = "+971556618406";
+const whatsappNumber = "+966580156192";
 const whatsappMessage =
   "Hi! I'm interested in your link building services. Can we discuss my project?";
 

@@ -38,7 +38,7 @@ import { CaseStudyCarousel } from "@/components/case-study-carousel";
 import { ContactSection } from "@/components/contact-section";
 import { BlogSection } from "@/components/blog-section";
 
-const whatsappNumber = "+971556618406";
+const whatsappNumber = "++966580156192";
 const whatsappMessage =
   "Hi! I'm interested in your link building services. Can we discuss my project?";
 

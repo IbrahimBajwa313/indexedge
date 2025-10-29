@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input"; 
 import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
   const [email, setEmail] = useState("");
@@ -171,15 +172,15 @@ export function Footer() {
                   Emirates
                 </span>
               </div>
-              {/* <div className="flex items-center space-x-3">
+               <div className="flex items-center space-x-3">
                 <FaWhatsapp className="h-5 w-5 text-emerald-400" />
                 <a
-                  href="tel:+971556618406"
+                  href="tel:+966580156192"
                   className="text-slate-300 hover:text-emerald-400 transition-colors"
                 >
-                  +971556618406
+                  +966580156192
                 </a>
-              </div> */}
+              </div> 
             </div>
           </div>
         </div>

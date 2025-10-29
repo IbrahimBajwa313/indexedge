@@ -6,7 +6,7 @@ import { AnimatedSection } from "@/components/animated-section"
 import { ContactSection } from "@/components/contact-section"
 
 function openWhatsApp() {
-  const phoneNumber = "+971556618406" // ✅ Replace with your actual number
+  const phoneNumber = "+966580156192" // ✅ Replace with your actual number
   const message = encodeURIComponent("Hi! I'm interested in your link building services. Can we discuss my project?")
   window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
 }
