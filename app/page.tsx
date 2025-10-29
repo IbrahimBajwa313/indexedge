@@ -50,6 +50,14 @@ const openWhatsApp = () => {
   window.open(url, "_blank");
 };
 
+// Function to scroll to services section
+const scrollToServices = () => {
+  const element = document.getElementById('services');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -83,6 +91,7 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button
+              onClick={scrollToServices} // Changed to scroll to services
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
             >
@@ -106,20 +115,7 @@ export default function HomePage() {
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-xl animate-pulse delay-1000"></div>
       </section>
 
-      {/* Case Studies Results Section */}
-      {/* <AnimatedSection className="py-20 px-4 relative">
-        <div className="container mx-auto max-w-7xl">
-          <Image
-            src="/images/case-study-results.png"
-            alt="Case Study Results"
-            width={1400}
-            height={600}
-            className="w-full rounded-2xl shadow-2xl"
-          />
-        </div>
-      </AnimatedSection> */}
-
-      {/* Trust Section */}
+      
       <AnimatedSection className="py-20 px-4 bg-secondary/50">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
@@ -175,7 +171,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Services Section */}
-      <AnimatedSection className="py-20 px-4">
+      <AnimatedSection id="services" className="py-20 px-4"> {/* Added id="services" here */}
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20 mb-4">

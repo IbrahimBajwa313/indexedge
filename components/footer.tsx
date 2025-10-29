@@ -172,15 +172,18 @@ export function Footer() {
                   Emirates
                 </span>
               </div>
-               <div className="flex items-center space-x-3">
-                <FaWhatsapp className="h-5 w-5 text-emerald-400" />
-                <a
-                  href="tel:+966580156192"
-                  className="text-slate-300 hover:text-emerald-400 transition-colors"
-                >
-                  +966580156192
-                </a>
-              </div> 
+              <div className="flex items-center space-x-3">
+  <FaWhatsapp className="h-5 w-5 text-emerald-400" />
+  <a
+    href="https://wa.me/966580156192"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-slate-300 hover:text-emerald-400 transition-colors"
+  >
+    +966580156192
+  </a>
+</div>
+
             </div>
           </div>
         </div>
