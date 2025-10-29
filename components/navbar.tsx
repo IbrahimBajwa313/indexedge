@@ -8,7 +8,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useTheme } from "next-themes";
 
-const whatsappNumber = "+923256677769";
+const whatsappNumber = "+966580156192";
 const whatsappMessage =
   "Hi! I'm interested in your link building services. Can we discuss my project?";
 
